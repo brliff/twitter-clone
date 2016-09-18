@@ -3,16 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
 	</head>
 	<body>
 		<div id="page-container">
 			<div id="dashboard">
 				<div id="profile-summary">
 					<div class="content">
-						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<img class='avatar' src='img/brad.jpg' data-toggle='tooltip' title="Brad Lifferth"/>
+						<p>Brad Lifferth</p>
+						<!--<span class="username">@yourNameHere</span>-->
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -43,7 +45,7 @@
 					<!-- HINT: jQuery ".prepend" method -->
 					<div class="tweet">
 						<div class="content">
-							<img class="avatar" src="img/damenleeturks.jpg" />
+							<img class="avatar" src="img/damenleeturks.jpg" data-toggle='tooltip' title="My BFF"/>
 							<strong class="fullname">My BFF</strong>
 							<span class="username">@mybff</span>
 
@@ -78,8 +80,8 @@
 
 										<!-- BLACK DIAMOND: Implement the Bootstrap tooltips for when you hover over a user’s avatar image -->
 										<!-- HINT: Bootstrap has good documentation =) -->
-										<img src="img/alagoon.jpg" />
-										<img src="img/vklimenko.jpg" />
+										<img class="avatar" src="img/brad.jpg" data-toggle='tooltip' title="Brad Lifferth"/>
+										<img class="avatar" src="img/vklimenko.jpg" data-toggle='tooltip' title="Vklimenko"/>
 									</div>
 								</div>
 
@@ -90,7 +92,7 @@
 								</div>
 							</div>
 							<div class="reply">
-								<img class="avatar" src="img/alagoon.jpg" />
+								<img class="avatar" src="img/brad.jpg" data-toggle='tooltip' title="Brad Lifferth"/>
 								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
 							</div>
 						</div>
@@ -98,7 +100,7 @@
 
 					<div class="tweet">
 						<div class="content">
-							<img class="avatar" src="img/funwatercat.jpg" />
+							<img class="avatar" src="img/funwatercat.jpg" data-toggle='tooltip' title="The Onion" />
 							<strong class="fullname">The Onion</strong>
 							<span class="username">@theonion</span>
 							<p class="tweet-text">“I'm able to speak confidently about a wide range of subjects, so it’s probably hard for most women to follow.” http://onion.com/1aWfKwf </p>
@@ -121,8 +123,8 @@
 								</div>
 								<div class="users-interact">
 									<div>
-										<img src="img/jennyshen.jpg" />
-										<img src="img/damenleeturks.jpg" />
+										<img class="avatar" src="img/jennyshen.jpg" data-toggle='tooltip' title="Harvard Biz Review" />
+										<img class="avatar" src="img/damenleeturks.jpg" data-toggle='tooltip' title="My BFF"/>
 									</div>
 								</div>
 								<div class="time">
@@ -130,7 +132,7 @@
 								</div>
 							</div>
 							<div class="reply">
-								<img class="avatar" src="img/alagoon.jpg" />
+								<img class="avatar" src="img/brad.jpg" data-toggle='tooltip' title="Brad Lifferth"/>
 								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
 							</div>
 						</div>
@@ -138,7 +140,7 @@
 
 					<div class="tweet">
 						<div class="content">
-							<img class="avatar" src="img/jennyshen.jpg" />
+							<img class="avatar" src="img/jennyshen.jpg" data-toggle='tooltip' title="Harvard Biz Review"/>
 							<strong class="fullname">Harvard Biz Review</strong>
 							<span class="username">@HarvardBiz</span>
 							<p class="tweet-text">It is possible to work with a loved one without ruining the relationship http://s.hbr.org/15FDIri </p>
@@ -161,8 +163,8 @@
 								</div>
 								<div class="users-interact">
 									<div>
-										<img src="img/vklimenko.jpg" />
-										<img src="img/funwatercat.jpg" />
+										<img class="avatar" src="img/vklimenko.jpg" data-toggle="tooltip" title="Vklimenko"/>
+										<img class="avatar" src="img/funwatercat.jpg" data-toggle="tooltip" title="The Onion"/>
 									</div>
 								</div>
 								<div class="time">
@@ -170,7 +172,7 @@
 								</div>
 							</div>
 							<div class="reply">
-								<img class="avatar" src="img/alagoon.jpg" />
+								<img class="avatar" src="img/brad.jpg" data-toggle='tooltip' title="Brad Lifferth"/>
 								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
 							</div>
 						</div>
@@ -178,5 +180,11 @@
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/animations.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.3/jquery.timeago.js"></script>
+
+
 	</body>
 </html>
